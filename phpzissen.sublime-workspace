@@ -1,0 +1,447 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"doSO",
+				"doSomething"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"page",
+				"page_links"
+			],
+			[
+				"result",
+				"results_per_page"
+			],
+			[
+				"sort",
+				"sort_links"
+			],
+			[
+				"while",
+				"while	while …"
+			],
+			[
+				"iterator",
+				"Iterator"
+			],
+			[
+				"assertE",
+				"assertEqual	$this->assertEqual()"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"mismatch",
+				"mismatch_score"
+			],
+			[
+				"topic",
+				"topic_id"
+			],
+			[
+				"mysqli_fetch",
+				"mysqli_fetch_array"
+			],
+			[
+				"modified",
+				"modified"
+			],
+			[
+				"respon",
+				"response_id"
+			],
+			[
+				"repon",
+				"response"
+			],
+			[
+				"repo",
+				"response"
+			],
+			[
+				"le",
+				"legend"
+			],
+			[
+				"field",
+				"fieldset"
+			],
+			[
+				"cate",
+				"category_name"
+			],
+			[
+				"category",
+				"category"
+			],
+			[
+				"mysqli_fetc",
+				"mysqli_fetch_array"
+			],
+			[
+				"mynum",
+				"mysqli_num_rows"
+			],
+			[
+				"mysqli_",
+				"mysqli_query"
+			],
+			[
+				"reuire",
+				"require_once"
+			],
+			[
+				"before",
+				"beforeSave"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"null",
+				"null"
+			],
+			[
+				"comm",
+				"comment"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"h",
+				"h"
+			],
+			[
+				"has",
+				"hasmany	Adds a hasMany relation to a model"
+			],
+			[
+				"e",
+				"echo	<?php echo … ?>"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/riskyjobs/registration.php",
+			"settings":
+			{
+				"buffer_size": 1895,
+				"line_ending": "Unix",
+				"name": "registration.php"
+			}
+		},
+		{
+			"file": "/var/www/riskyjobs/send.php",
+			"settings":
+			{
+				"buffer_size": 24,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"view ",
+				"View: Toggle Minimap"
+			],
+			[
+				"view",
+				"View: Toggle Status Bar"
+			],
+			[
+				"default",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 385.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/testXpath/PrecedingAndFollowingTest.html",
+		"/var/www/phpunit/StubTest.php",
+		"/var/www/phpunit/SomeClass.php",
+		"/var/www/riskyjobs/index.php",
+		"/var/www/riskyjobs/connectvars.php",
+		"/var/www/riskyjobs/search.php",
+		"/var/www/phpunit/StackTest.php",
+		"/var/www/phpunit/DataTest.php",
+		"/var/www/phpunit/CsvFileIterator.php",
+		"/var/www/phpunit/DataProTest.php",
+		"/var/www/phpunit/data.csv",
+		"/var/www/phpunit/ExceptionTest.php",
+		"/var/www/phpunit/ExpectedErrorTest.php",
+		"/var/www/phpunit/ErrorSuppressionTest.php",
+		"/var/www/phpunit/OutputTest.php",
+		"/var/www/blog4/sql/create_table_rolesAndusers.sql",
+		"/var/www/phpunit/testArray.php",
+		"/var/www/blog3/app/Model/Comment.php",
+		"/var/www/blog3/app/Model/Post.php",
+		"/var/www/blog3/app/View/Posts/view.ctp",
+		"/var/www/blog3/app/View/Posts/index.ctp",
+		"/var/www/blog3/app/Controller/PostsController.php",
+		"/var/www/blog3/app/Controller/CommentsController.php",
+		"/var/www/SampleCodeJP/ch09/initial/riskyjobs.sql",
+		"/var/www/blog3/app/Controller/CommentsController.ctp",
+		"/var/www/blog3/sql/create table comments.sql",
+		"/var/www/blog2/app/Model/Post.php",
+		"/var/www/blog2/app/View/Posts/add.ctp",
+		"/var/www/blog2/app/View/Posts/index.ctp",
+		"/var/www/blog2/app/View/Posts/view.ctp",
+		"/var/www/blog2/app/Controller/PostsController.php",
+		"/var/www/blog3/app/View/Posts/edit.ctp",
+		"/var/www/blog2/app/View/Posts/edit.ctp",
+		"/var/www/blog3/app/View/Posts/add.ctp",
+		"/var/www/blog3/sql/create_table_posts.sql",
+		"/var/www/mismatch/sql/create_table_mismatch_category.sql",
+		"/var/www/mismatch/questionnaire.php",
+		"/var/www/SampleCodeJP/ch08/page379/mismatch_topic.sql",
+		"/var/www/SampleCodeJP/ch08/initial/Passwords.txt",
+		"/var/www/blog2/sql/create_table_posts.sql",
+		"/var/www/blog2/app/Controller/UsersController.php",
+		"/var/www/blog2/app/Model/User.php",
+		"/var/www/blog2/app/View/Users/add.ctp",
+		"/var/www/blog2/app/View/Users/login.ctp",
+		"/var/www/blog2/app/Controller/AppController.php",
+		"/var/www/blog2/lib/Cake/Controller/CakeErrorController.php",
+		"/var/www/blog2/app/View/Elements/helpbox.ctp",
+		"/var/www/blog2/app/View/Layouts/default.ctp",
+		"/var/www/blog2/sql/create_table_users.sql",
+		"/var/www/blog2/app/View/Layouts/ajax.ctp",
+		"/var/www/blog/app/View/Posts/index.ctp",
+		"/var/www/blog/app/Controller/PostsController.php",
+		"/var/www/blog/app/Controller/CommentsController.php",
+		"/var/www/blog/app/View/Posts/view.ctp",
+		"/var/www/blog/app/View/Posts/edit.ctp",
+		"/var/www/blog/app/Model/Post.php",
+		"/var/www/blog/app/Model/Comment.php",
+		"/var/www/blog/app/View/Posts/add.ctp",
+		"/var/www/blog/create_table_comments.sql",
+		"/var/www/blog/app/View/Layouts/default.ctp",
+		"/home/satoshi/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/satoshi/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mail",
+			"generate_page_links",
+			"usersearch",
+			"build_query",
+			"user_search",
+			"VALUES",
+			"INSERT INTO",
+			"INSERT INTO ",
+			"responses",
+			"AppController"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"SET",
+			"UPDATE",
+			"comment"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/riskyjobs/registration.php",
+					"settings":
+					{
+						"buffer_size": 1895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "registration.php",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/riskyjobs/send.php",
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true
+}

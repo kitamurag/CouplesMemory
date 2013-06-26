@@ -24,7 +24,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -36,11 +35,12 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<script src="/scripts/jquery.js"></script>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php echo $this->Html->link('Home', '/'); ?></h1>
 		</div>
 		<div id="content">
 
@@ -58,5 +58,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	<script>
+	$(function(){
+		setTimeout(function(){
+			$('#flashMessage').fadeOut('slow');	
+		},800);
+	});
+
+
+	</script>
 </body>
 </html>
