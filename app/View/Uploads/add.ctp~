@@ -7,7 +7,7 @@
 <div class="uploads form">
 	<?php echo $this->Form->create('Upload',array('action'=>'add','type'=>'file')); ?>	
 	<?php echo $this->Form->file('files.',array('type'=>'file','multiple')); ?>
-<img id="prevPhoto">
+<img>
 	<?php echo $this->Form->end(__('Upload')); ?>
 
 </div><!-- form -->
@@ -32,7 +32,7 @@
                                 crop:false,
                                 quality:80,
                                 callback:function(data,width,height){
-                                        $("#prevPhoto").attr('src',data);
+                                        $("img").attr('src',data);
                                         }
 
                                 });
