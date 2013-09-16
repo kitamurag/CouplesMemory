@@ -1,8 +1,11 @@
-<?php 
+<?php
 class UploadsController extends AppController{
 	public function index(){
 		// $this->Upload->recursive = 0;
-		$this->set('uploads',$this->paginate());
+		// $this->set('uploads',$this->paginate());
+		$this->set('uploads',$this->Upload->find('all',array(
+'order' => array('created' => 'desc')
+			)));
 		$this->set('username',$this->Auth->user('username'));
 	}
 
@@ -34,5 +37,14 @@ class UploadsController extends AppController{
 
 	}
 
+	public function delete($id){
+		if($this->request->is('get')){
+			throw new MethodNotAllowedException();
+		}
+		if($this->Upload->delete($id)){
+			$this->Session->setFlash('The photo has been deleted.');
+			$this->redirect(array('action' => 'index'));
+		}
+	}
 
 }

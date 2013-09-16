@@ -1,4 +1,4 @@
-<?php 
+<?php
 class UsersController extends AppController{
 	public function beforeFilter(){
 		parent::beforeFilter();
@@ -12,7 +12,7 @@ class UsersController extends AppController{
 				$this->Session->setFlash('Username has been saved.');
 				$this->redirect(array('controller'=>'uploads','action'=>'index'));
 			}else{
-				$this->Session->setFlash('Unable to add your username.');				
+				$this->Session->setFlash('Unable to add your username.');
 			}
 		}
 
@@ -21,6 +21,7 @@ class UsersController extends AppController{
 	public function login(){
 		if($this->request->is('post')){
 			if($this->Auth->login()){
+				$this->set('username',$this->Auth->user('username'));
 				return $this->redirect($this->Auth->redirect());
 			}else{
 				$this->Session->setFlash('username or password is incorrect');

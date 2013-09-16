@@ -1,45 +1,7 @@
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>	
-	<ul>
-		<li><?php echo $this->Html->link(__('New Upload'),array('action'=>'add')); ?></li>
-	</ul>
-</div><!-- actions -->
-<div class="uploads form">
-	<?php echo $this->Form->create('Upload',array('action'=>'add','type'=>'file')); ?>	
-	<?php echo $this->Form->file('files.',array('type'=>'file','multiple')); ?>
-<img id="prevPhoto">
-	<?php echo $this->Form->end(__('Upload')); ?>
+<div id="uploads">
+	<?= $this->Form->create('Upload',array('action'=>'add','type'=>'file')); ?>
+	<?= $this->Form->file('files.',array('type'=>'file','multiple')); ?>
+        <?= $this->Form->end(__('アップロード')); ?>
 
-</div><!-- form -->
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>	
-	<ul>
-		<li><?php echo $this->Html->link(__('List Uploads'),array('action'=>'index')); ?></li>
-	</ul>
-</div><!-- actions -->
-<?php echo $this->Html->script('jquery');?>
-<?php echo $this->Html->script('canvasResize/binaryajax.js');?>
-<?php echo $this->Html->script('canvasResize/exif.js');?>
-<?php echo $this->Html->script('canvasResize/canvasResize.js');?>
-<script>
-                $(document).ready(function(){
-                        $('input[type=file]').change(function(e){
-                                var file = e.target.files[0];
-                                canvasResize(file,
-                                {
-                                width:200,
-                                height:0,
-                                crop:false,
-                                quality:80,
-                                callback:function(data,width,height){
-                                        $("#prevPhoto").attr('src',data);
-                                        }
-
-                                });
-                        });     
-                
-                });             
-
-
-
-</script>
+        <img id="prevPhoto">
+</div><!-- uploads -->

@@ -22,50 +22,156 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <!DOCTYPE html>
 <html>
 <head>
-	<?php echo $this->Html->charset(); ?>
+	<?= $this->Html->charset(); ?>
 	<title>
-		<?php echo $title_for_layout; ?>
+		<?= $title_for_layout; ?>
 	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-	<script src="/scripts/jquery.js"></script>
+	<?= $this->fetch('meta');?>
+	<? // $this->fetch('css');?>
+	<?=	$this->Html->css('reset');?>
+	<?=	$this->Html->css('text');?>
+	<?=	$this->Html->css('960_12_col');?>
+	<?=	$this->Html->css('style');?>
+	<?	// echo $this->Html->meta('icon');?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link('Home', '/'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+	<div id="container" class="container_12">
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+		<div id="header" >
+			<div class="grid_7">
+				<h1><?= $this->Html->link('Couples Memory', '/'); ?></h1>
+			</div><!-- grid_7 -->
+			<div class="grid_5">
+				<nav>
+					<ul class="action" >
+						<li>
+							<button id="buttonUpload">写真をアップロード</button>
+						</li>
+					</ul>
+				</nav>
+			</div><!-- gird_5 -->
+		</div><!-- header -->
+
+		<div id="content" class="clearfix">
+			<?= $this->Session->flash(); ?>
+			<?= $this->fetch('content'); ?>
+		</div><!-- content -->
+
+		<footer>
+
+		</footer>
+
+	</div><!-- container -->
+
+	<!-- 	<?= $this->element('sql_dump'); ?> -->
+	<!-- script -->
+	<?= $this->Html->script('jquery'); ?>
+	<?= $this->Html->script('jquery.idTabs.min'); ?>
+	<?= $this->Html->script('canvasResize/binaryajax');?>
+	<?= $this->Html->script('canvasResize/exif');?>
+	<?= $this->Html->script('canvasResize/canvasResize');?>
 	<script>
-	$(function(){
-		setTimeout(function(){
-			$('#flashMessage').fadeOut('slow');	
-		},800);
-	});
+		$(function(){
 
+			//flashMessage
+			setTimeout(function(){
+				$('#flashMessage').fadeOut('slow');
+			},800);
 
+            $('input[type=file]').change(function(e){
+            	$('#prevPhoto').empty();
+            	var photos = e.target.files;
+            	$.each(photos,function(){
+					canvasResize(this,{
+	                    width:200,
+	                    height:200,
+	                    crop:false,
+	                    quality:80,
+	                    callback:function(data,width,height){
+	                    	var img = new Image();
+	                    	img.onload = function(){
+	                    		$(this)
+		                    		.css({
+		                    			'margin':'10px',
+		                    			'width' :width,
+		                    			'height':height,
+		                    			'display':'none'
+		                    		})
+		                    		.appendTo('#prevPhoto')
+		                    		.fadeIn(600);
+	                    	};
+	                    	$(img).attr('src',data);
+	                 	}
+	                });
+				})
+            });
+
+			$('input[type=text]').change(function(){
+				$('form').trigger('submit');
+			});
+
+			var post ={
+
+				container:$('.post'),
+
+				init:function(){
+					// this.createCloseButton();
+					this.toggleCloseButton();
+				},
+
+				// createCloseButton:function(){
+				// 	var $this = this;
+
+				// 	$('<span>',{
+				// 		'text':'×',
+				// 		'class':'close',
+				// 	})
+				// 		.css({'display':'none'})
+				// 		.prependTo(this.container);
+				// },
+
+				toggleCloseButton:function(){
+					this.container.hover(function(){
+						$(this).find('span.close:first')
+							.fadeToggle(600);
+
+					},function(){
+						$(this).find('span.close:first')
+							.fadeToggle(600);
+					});
+				}
+
+			};
+			post.init();
+
+			var uploadForm = {
+				container:$('#uploads'),
+
+				init:function(){
+					$('#buttonUpload').click(function(){
+						uploadForm.container.slideDown(600);
+						uploadForm.createCloseButton();
+					})
+				},
+
+				createCloseButton:function(){
+					var $this = this;
+					$('<span>',{
+						text:'×',
+						class:'close'
+					})
+						.prependTo(this.container)
+						.click(function(){
+							$this.container.slideUp(600);
+							$('#prevPhoto').empty();
+						});
+				}
+
+			};
+			uploadForm.init();
+
+		});
 	</script>
 </body>
 </html>

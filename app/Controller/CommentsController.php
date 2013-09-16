@@ -13,7 +13,7 @@ class CommentsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Comment->recursive = 0;
+		$this->Comment->recursive = -1;
 		$this->set('comments', $this->paginate());
 	}
 
